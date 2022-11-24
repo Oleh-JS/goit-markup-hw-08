@@ -8,6 +8,31 @@
   --icon-klient-color: #afb1b8;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Bold.woff), url(../fonts/Raleway-Bold.woff2);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Black.woff2), url(../fonts/Roboto-Black.woff);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.woff2), url(../fonts/Roboto-Bold.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.woff2), url(../fonts/Roboto-Medium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff2), url(../fonts/Roboto-Regular.woff);
+  font-weight: 400;
+}
 /**
  * Minified by jsDelivr using clean-css v4.2.3.
  * Original file: /npm/modern-normalize@1.1.0/modern-normalize.css
@@ -183,31 +208,6 @@ img {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Raleway";
-  src: url(../fonts/Raleway-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Black.ttf);
-  font-weight: 900;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Medium.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
-  font-weight: 400;
-}
 body {
   color: var(--color-text);
   font-size: 14px;
@@ -896,12 +896,12 @@ header {
   border-radius: 4px;
 }
 
-.client-item > a {
+.client__link {
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 170px;
+  height: 92px;
 }
 
 .client-item > a:hover > .svg-client,

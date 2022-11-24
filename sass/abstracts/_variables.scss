@@ -10,30 +10,30 @@
 
 @font-face {
   font-family: "Raleway";
-  src: url(../fonts/Raleway-Bold.ttf);
+  src: url(../fonts/Raleway-Bold.woff), url(../fonts/Raleway-Bold.woff2);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Black.ttf);
+  src: url(../fonts/Roboto-Black.woff2), url(../fonts/Roboto-Black.woff);
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Bold.ttf);
+  src: url(../fonts/Roboto-Bold.woff2), url(../fonts/Roboto-Bold.woff);
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Medium.ttf);
+  src: url(../fonts/Roboto-Medium.woff2), url(../fonts/Roboto-Medium.woff);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.woff2), url(../fonts/Roboto-Regular.woff);
   font-weight: 400;
 }
