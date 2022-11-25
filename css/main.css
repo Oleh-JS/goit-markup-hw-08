@@ -229,9 +229,6 @@ body {
   .container {
     max-width: 430px;
   }
-  .mobile-menu__container {
-    position: relative;
-  }
 }
 .backdrop {
   display: block;
@@ -568,10 +565,7 @@ form .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -590,9 +584,13 @@ form .button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    padding: 0 40px 48px;
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #ffffff;
+  }
+  .mobile-menu__container-nav {
+    margin-top: 48px;
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -601,11 +599,10 @@ form .button {
   }
   .btn-mobile-menu {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     width: 40px;
     height: 40px;
-    border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
@@ -614,9 +611,6 @@ form .button {
   }
   .btn-mobile-menu:hover .btn-mobile-menu__img, .btn-mobile-menu:focus .btn-mobile-menu__img {
     fill: var(--color-accent);
-  }
-  .mobile-menu {
-    padding: 48px 40px;
   }
   .mobile-menu__nav-item {
     margin-bottom: 32px;
@@ -631,6 +625,17 @@ form .button {
   }
   .mobile-menu__nav-item:hover, .mobile-menu__nav-item:focus {
     color: var(--color-accent);
+  }
+  .mobile-menu__container-footer {
+    margin-top: auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-menu__container {
+    position: relative;
+  }
+  .btn-mobile-menu_top {
+    top: -38px;
   }
 }
 .nav-list-portfolio {
