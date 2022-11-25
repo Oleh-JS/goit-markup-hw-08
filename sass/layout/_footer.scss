@@ -1,126 +1,126 @@
-.footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+// .footer {
+//   background-color: #2f303a;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
 
-.footer_logo {
-  margin-bottom: 20px;
-  margin-right: auto;
-  display: inline-block;
-  width: auto;
-  color: var(--second-header-color-text);
-}
+// .footer_logo {
+//   margin-bottom: 20px;
+//   margin-right: auto;
+//   display: inline-block;
+//   width: auto;
+//   color: var(--second-header-color-text);
+// }
 
-.footer-span {
-  color: var(--color-accent);
-}
+// .footer-span {
+//   color: var(--color-accent);
+// }
 
-.address {
-  font-style: normal;
-}
+// .address {
+//   font-style: normal;
+// }
 
-.address-list-item:not(:last-child) {
-  margin-bottom: 9px;
-}
+// .address-list-item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 
-.address-link-geo {
-  color: var(--second-header-color-text);
-}
+// .address-link-geo {
+//   color: var(--second-header-color-text);
+// }
 
-.address-link-mail {
-  color: rgba(255, 255, 255, 0.6);
-}
+// .address-link-mail {
+//   color: rgba(255, 255, 255, 0.6);
+// }
 
-.address-link-phone {
-  color: rgba(255, 255, 255, 0.6);
-}
+// .address-link-phone {
+//   color: rgba(255, 255, 255, 0.6);
+// }
 
-.footer-div-adress {
-  margin-right: 70px;
-}
+// .footer-div-adress {
+//   margin-right: 70px;
+// }
 
-.social-wrapper {
-  display: flex;
-}
+// .social-wrapper {
+//   display: flex;
+// }
 
-.social-div > p {
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.14;
-  color: #ffffff;
-  text-transform: uppercase;
-}
+// .social-div > p {
+//   margin-bottom: 20px;
+//   font-weight: 700;
+//   line-height: 1.14;
+//   color: #ffffff;
+//   text-transform: uppercase;
+// }
 
-.social-div {
-  margin-right: 93px;
-}
+// .social-div {
+//   margin-right: 93px;
+// }
 
-.social-wrapper svg {
-  fill: #ffffff;
-}
+// .social-wrapper svg {
+//   fill: #ffffff;
+// }
 
-.footer_team-card-link:hover,
-.footer_team-card-link:focus {
-  background-color: var(--color-accent);
-}
+// .footer_team-card-link:hover,
+// .footer_team-card-link:focus {
+//   background-color: var(--color-accent);
+// }
 
-.footer_team-card-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .footer_team-card-link {
+//   background-color: rgba(255, 255, 255, 0.1);
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.footer-wrapper {
-  display: flex;
-  align-items: baseline;
-}
+// .footer-wrapper {
+//   display: flex;
+//   align-items: baseline;
+// }
 
-.wrapper-input-footer {
-  display: flex;
-}
+// .wrapper-input-footer {
+//   display: flex;
+// }
 
-.wrapper-input-footer > input {
-  padding: 15px 16px;
-  width: 358px;
-  margin-right: 12px;
+// .wrapper-input-footer > input {
+//   padding: 15px 16px;
+//   width: 358px;
+//   margin-right: 12px;
 
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: var(--background-color);
-  font-size: 16px;
-  line-height: 1.25;
+//   background-color: transparent;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   color: var(--background-color);
+//   font-size: 16px;
+//   line-height: 1.25;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.wrapper-input-footer > input:focus {
-  border-color: var(--color-accent);
-  outline: none;
-}
+// .wrapper-input-footer > input:focus {
+//   border-color: var(--color-accent);
+//   outline: none;
+// }
 
-.wrapper-input-footer > input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 1.25;
-}
+// .wrapper-input-footer > input::placeholder {
+//   color: rgba(255, 255, 255, 0.6);
+//   font-size: 16px;
+//   line-height: 1.25;
+// }
 
-label[for="email-user-footer"] {
-  display: block;
-  margin-bottom: 20px;
-  color: var(--second-header-color-text);
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.14;
-}
+// label[for="email-user-footer"] {
+//   display: block;
+//   margin-bottom: 20px;
+//   color: var(--second-header-color-text);
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   line-height: 1.14;
+// }
 
-footer form .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// footer form .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-footer .button > svg {
-  margin-left: 10px;
-}
+// footer .button > svg {
+//   margin-left: 10px;
+// }
