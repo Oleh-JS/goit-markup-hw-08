@@ -227,7 +227,7 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    max-width: 430px;
+    max-width: 460px;
   }
 }
 .backdrop {
@@ -573,6 +573,9 @@ form .button {
 .list-contact {
     display: none;
   }
+  .header {
+    position: relative;
+  }
   .mobile-menu {
     position: absolute;
     top: 0px;
@@ -584,7 +587,6 @@ form .button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    padding: 0 40px 48px;
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #ffffff;
@@ -600,9 +602,10 @@ form .button {
   .btn-mobile-menu {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 15px;
     width: 40px;
     height: 40px;
+    border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
@@ -626,13 +629,14 @@ form .button {
   .mobile-menu__nav-item:hover, .mobile-menu__nav-item:focus {
     color: var(--color-accent);
   }
-  .mobile-menu__container-footer {
-    margin-top: auto;
+  .mobile-menu__container {
+    padding-left: 40px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .mobile-menu__container {
     position: relative;
+    max-width: 460px;
   }
   .btn-mobile-menu_top {
     top: -38px;
