@@ -40,6 +40,7 @@
   }
 }
 
+// __________0 - 430px_______________
 @media screen and (max-width: 430px) {
   .client-list {
     flex-direction: column;
@@ -49,5 +50,29 @@
   .client-item {
     margin-right: 0px;
     margin-bottom: 30px;
+  }
+}
+
+// ________________768px +________________
+@media screen and (min-width: 768px) {
+  .client-list {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  .client__link {
+    width: 226px;
+  }
+
+  .svg-client {
+    max-width: 226px;
+  }
+
+  .client-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(-n + 2) {
+      margin-right: 0;
+    }
   }
 }

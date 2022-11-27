@@ -75,21 +75,25 @@
 
 // _____________768px +__________________
 
-// @media screen and (min-width: 768px) {
-//   .section-team-list {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-basis: calc((100% - 30px) / 2);
-//   }
+@media screen and (min-width: 768px) {
+  .section-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+  }
 
-//   .section-team-list-item {
-//     width: 354px;
+  .section-team-list-item {
+    width: 354px;
 
-//     &:nth-child(2n-1) {
-//       margin-right: 30px;
-//     }
-//   }
-// }
+    &:nth-child(2n-1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
 
 // ___________________________________________
 // .section-team {
