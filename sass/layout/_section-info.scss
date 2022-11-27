@@ -1,3 +1,29 @@
+.card-advantage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  max-width: 450px;
+  height: 120px;
+}
+
+.card-advantage__subtitle {
+  margin-bottom: 10px;
+  line-height: 1.17;
+}
+
+.section-info__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .card-advantage__subtitle {
+    text-align: center;
+  }
+}
 // .section-info__list {
 //   display: flex;
 // }

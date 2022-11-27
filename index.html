@@ -107,7 +107,7 @@
 
         <!-- =============================SECTION HEROIS========================== -->
         <main>
-            <section class="herois section">
+            <section class="herois">
                 <div class="container center">
                     <h1 class="herois__header header">Эффективные решения для вашего бизнеса</h1>
                     <button class="button" type="button" data-modal-open>Заказать услугу</button>
@@ -115,7 +115,7 @@
             </section>
 
             <!-- ___________section advantage-info_____________ -->
-            <!-- <section class="section-info section">
+            <section class="section-info section">
                 <div class="container">
                     <h2 class="visually-hidden">Почему мы лучше других!</h2>
                     <ol class="section-info__list section-padding list">
@@ -166,10 +166,10 @@
                         </li>
                     </ol>
                 </div>
-            </section> -->
+            </section>
 
             <!-- ========SECTION GALLERY========================= -->
-            <!-- <section class="section-gallery">
+            <section class="section-gallery">
                 <div class="container background-color">
                     <h2 class="section-gallery-header header">Чем мы занимаемся</h2>
                     <ol class="section-gallery-list list">
@@ -196,16 +196,21 @@
                         </li>
                     </ol>
                 </div>
-            </section> -->
+            </section>
 
             <!-- ==========================SECTION TEAM============================== -->
-            <!-- <section class="section-team section">
+            <section class="section-team section">
                 <div class="container section-team-wrapper section-padding">
                     <h2 class="team-header header">Наша команда</h2>
                     <ol class="section-team-list list">
                         <li class="section-team-list-item">
-                            <img class="section-team-img" src="./images/pictures/img2.1.jpg"
-                                alt="Игорь Демьяненко Product Designer" width="270" height="260">
+                            <picture>
+                                <img class="section-team-img"
+                                    srcset="./images/pictures/mobile/team-1-min.jpg 450w, ./images/pictures/mobile/team-1@2x-min.jpg 900w"
+                                    src="./images/pictures/mobile/team-1-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer"
+                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                            </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Игорь Демьяненко</h3>
                                 <p class="section-team-text">Product Designer</p>
@@ -234,8 +239,13 @@
                             </div>
                         </li>
                         <li class="section-team-list-item">
-                            <img class="section-team-img" src="./images/pictures/img2.2.jpg"
-                                alt="Ольга Репина Frontend Developer" width="270" height="260">
+                            <picture>
+                                <img class="section-team-img"
+                                    srcset="./images/pictures/mobile/team-2-min.jpg 450w, ./images/pictures/mobile/team-2@2x-min.jpg 900w"
+                                    src="./images/pictures/mobile/team-2-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer"
+                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                            </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Ольга Репина</h3>
                                 <p class="section-team-text">Frontend Developer</p>
@@ -264,8 +274,13 @@
                             </div>
                         </li>
                         <li class="section-team-list-item">
-                            <img class="section-team-img" src="./images/pictures/img2.3.jpg"
-                                alt="Николай Тарасов Marketing" width="270" height="260">
+                            <picture>
+                                <img class="section-team-img"
+                                    srcset="./images/pictures/mobile/team-3-min.jpg 450w, ./images/pictures/mobile/team-3@2x-min.jpg 900w"
+                                    src="./images/pictures/mobile/team-3-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer"
+                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                            </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Николай Тарасов</h3>
                                 <p class="section-team-text">Marketing</p>
@@ -294,8 +309,13 @@
                             </div>
                         </li>
                         <li class="section-team-list-item">
-                            <img class="section-team-img" src="./images/pictures/img2.4.jpg"
-                                alt="Михаил Ермаков UI Designer" width="270" height="260">
+                            <picture>
+                                <img class="section-team-img"
+                                    srcset="./images/pictures/mobile/team-4-min.jpg 450w, ./images/pictures/mobile/team-4@2x-min.jpg 900w"
+                                    src="./images/pictures/mobile/team-4-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer"
+                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                            </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Михаил Ермаков</h3>
                                 <p class="section-team-text">UI Designer</p>
@@ -325,10 +345,10 @@
                         </li>
                     </ol>
                 </div>
-            </section> -->
+            </section>
 
             <!-- ______________________section СLIENTS_________________________________ -->
-            <!-- <section class="section">
+            <section class="section">
                 <div class="container section-padding">
                     <h2 class="header team-header">Постоянные клиенты</h2>
                     <ul class="client-list">
@@ -376,11 +396,11 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
 
         <!-- ===============================FOOTER======================== -->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="container footer-wrapper">
                 <div class="footer-div-adress">
                     <a class="logo footer_logo" href="http://google.com"><span class="footer-span">Web</span>Studio</a>
@@ -441,10 +461,10 @@
                     </div>
                 </form>
             </div>
-        </footer> -->
+        </footer>
 
         <!-- __________backdrop/modal______________ -->
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal> -->
             <div class="modal">
                 <button type="button" class="moda-close-btn" data-modal-close>
                     <svg class="moda-close-btn__img" height="11" width="11">

@@ -1,4 +1,5 @@
 .herois__header {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -8,7 +9,30 @@
   color: var(--second-header-color-text);
 }
 
-.herois {
+@media screen and (max-width: 767px) {
+  .herois {
+    padding: 118px 0;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/pictures/mobile/header-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herois {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/pictures/mobile/header@2-min.jpg);
+    }
+  }
 }
 
 // .herois {
