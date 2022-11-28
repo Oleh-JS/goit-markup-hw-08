@@ -31,7 +31,7 @@
   flex-basis: calc((100% - 60px) / 2);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .client-item {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -76,5 +76,29 @@
     &:nth-child(3n) {
       margin-right: 0;
     }
+  }
+}
+
+// ___________1200+______________
+@media screen and (min-width: 1200px) {
+  .client-list > .client-item {
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .client__link {
+    width: 170px;
+  }
+
+  .svg-client {
+    max-width: 170px;
+  }
+
+  .client-list {
+    flex-basis: calc((100% - 30px * 5) / 6);
   }
 }

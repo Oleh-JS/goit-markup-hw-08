@@ -23,13 +23,14 @@
                             <a class="nav-list__link link" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="nav-list__item">
-                            <a class="nav-list__link link" href="http://google.com">Контакты</a>
+                            <a class="nav-list__link link" href="#">Контакты</a>
                         </li>
                     </ol>
                 </nav>
                 <ol class="list-contact list">
                     <li class="list-contact__mail">
-                        <a class="link list-contact__link" href="mailto:info@devstudio.com">
+                        <a class="link list-contact__link list-contact__link_padding-top"
+                            href="mailto:info@devstudio.com">
                             <svg width="16" height="12">
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
@@ -37,7 +38,7 @@
                         </a>
                     </li>
                     <li class="list-contact__phone">
-                        <a class="link list-contact__link" href="tel:+380961111111">
+                        <a class="link list-contact__link list-contact__link_padding-bottom" href="tel:+380961111111">
                             <svg width="10" height="16">
                                 <use href="./images/icons.svg#icon-tel"></use>
                             </svg>
@@ -177,22 +178,34 @@
                             <div class="wrapper-gallery-img">
                                 <p>Десктопні додатки</p>
                             </div>
-                            <img class="section-gallery-img" src="./images/pictures/img1.jpg"
-                                alt="работа дизайнера за компьютером" width="370">
+                            <picture>
+                                <img srcset="./images/pictures/desktop/superiority-1-min.jpg 370w, 
+                                             ./images/pictures/desktop/superiority-1@2x-min.jpg 740w"
+                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-1-min.jpg"
+                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                            </picture>
                         </li>
                         <li class="section-gallery-list-item">
                             <div class="wrapper-gallery-img">
                                 <p>Мобільні додатки</p>
                             </div>
-                            <img class="section-gallery-img" src="./images/pictures/img2.jpg"
-                                alt="девушка смотрит в смартфон" width="370">
+                            <picture>
+                                <img srcset="./images/pictures/desktop/superiority-2-min.jpg 370w, 
+                                                                         ./images/pictures/desktop/superiority-2@2x-min.jpg 740w"
+                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-2-min.jpg"
+                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                            </picture>
                         </li>
                         <li class="section-gallery-list-item">
                             <div class="wrapper-gallery-img">
                                 <p>Дизайнерські рішення</p>
                             </div>
-                            <img class="section-gallery-img" src="./images/pictures/img3.jpg"
-                                alt="работа дизайнера в офисе" width="370">
+                            <picture>
+                                <img srcset="./images/pictures/desktop/superiority-3-min.jpg 370w, 
+                                                                         ./images/pictures/desktop/superiority-3@2x-min.jpg 740w"
+                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-3-min.jpg"
+                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                            </picture>
                         </li>
                     </ol>
                 </div>
@@ -401,7 +414,7 @@
 
         <!-- ===============================FOOTER======================== -->
         <footer class="footer">
-            <div class="container footer-wrapper">
+            <div class="container footer-wrapper section">
                 <div class="footer__wraper-tablet">
                     <div class="footer-div-adress">
                         <a class="logo footer_logo" href="http://google.com"><span
@@ -458,7 +471,7 @@
                     <label for="email-user-footer">Підпишіться на розсилку</label>
                     <div class="wrapper-input-footer">
                         <input type="email" id="email-user-footer" placeholder="E-mail">
-                        <button type="submit" class="button">Підписатися
+                        <button type="submit" class="button footer__button">Підписатися
                             <svg width="24" height="24">
                                 <use href="./images/icons.svg#icon-button-footer"></use>
                             </svg>

@@ -1,13 +1,11 @@
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-div-adress {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   margin-bottom: 60px;
 }
 
@@ -125,6 +123,7 @@ footer .button > svg {
   margin-left: 10px;
 }
 
+// _______________768px +___________________
 @media screen and (min-width: 768px) {
   .wrapper-input-footer > input {
     max-width: 450px;
@@ -140,11 +139,45 @@ footer .button > svg {
   }
 }
 
-// .footer-wrapper {
-//   display: flex;
-//   align-items: baseline;
-// }
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 
-// .wrapper-input-footer {
-//   display: flex;
-// }
+  .footer__wraper-tablet {
+    margin: 0;
+  }
+
+  .wrapper-input-footer {
+    display: flex;
+  }
+
+  .wrapper-input-footer > input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  label[for="email-user-footer"] {
+    text-align: start;
+  }
+
+  .footer-div-adress {
+    margin-bottom: 0;
+    margin-right: 94px;
+  }
+
+  .social-wrapper {
+    margin-bottom: 0;
+  }
+
+  .address-list-item {
+    text-align: start;
+  }
+
+  .footer_logo {
+    text-align: start;
+  }
+}

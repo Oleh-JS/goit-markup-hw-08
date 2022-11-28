@@ -10,7 +10,7 @@
   color: var(--second-header-color-text);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .herois {
     padding: 118px 0;
     background-color: #c4c4c4;
@@ -65,6 +65,40 @@
     width: 360px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .herois {
+    padding: 200px 0;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/pictures/desktop/desktop-header-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .herois {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/pictures/desktop/desktop-header@2x-min.jpg);
+    }
+  }
+
+  .herois__header {
+    font-size: 44px;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
   }
 }
 

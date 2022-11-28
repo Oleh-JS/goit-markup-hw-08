@@ -28,16 +28,24 @@ body {
   text-align: center;
 }
 
-// __________480px - 767px___________
+// __________480px - 768px___________
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
     max-width: calc(480px - 20px);
   }
 }
 
+// ____________768+_____________________
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+
+// ______________________1200+___________________
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
