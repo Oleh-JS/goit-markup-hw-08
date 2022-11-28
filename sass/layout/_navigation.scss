@@ -171,11 +171,12 @@
 
   .navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   .navigation__logo_right {
-    margin-right: 94px;
+    margin-right: 65px;
   }
 
   .nav-list {
