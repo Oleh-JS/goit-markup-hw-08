@@ -255,6 +255,10 @@ body {
   .container {
     max-width: 1200px;
   }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .backdrop {
   display: block;
@@ -937,6 +941,9 @@ form .button {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
