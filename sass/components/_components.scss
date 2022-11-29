@@ -56,10 +56,31 @@ body {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1220px) {
+  .section-info__list {
+    justify-content: center;
+  }
+
+  .section-gallery-list {
+    justify-content: center;
+  }
+
+  .section-team-list {
+    justify-content: center;
+  }
+
   .container {
     padding-left: 7px;
-    padding-right: 7px;
+    padding-right: 6px;
     margin-left: auto;
-    margin-right: auto;
+  }
+
+  .footer-wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .header__body {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
