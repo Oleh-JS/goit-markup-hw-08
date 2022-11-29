@@ -750,6 +750,9 @@ form .button {
   .btn-mobile-menu {
     display: none;
   }
+  .list-contact {
+    display: block;
+  }
   .header__body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -990,6 +993,9 @@ form .button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .card-advantage__subtitle {
+    text-align: start;
+  }
   .section-info__item {
     width: 354px;
   }
@@ -1180,9 +1186,16 @@ form .button {
   }
   .section-team-list-item {
     width: 270px;
+    margin-bottom: 0;
   }
   .section-team-list-item:not(:last-child) {
     margin-right: 30px;
+  }
+  .card {
+    padding: 30px 0px;
+  }
+  .section-team-list-item:nth-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 .svg-client {
@@ -1264,6 +1277,9 @@ form .button {
   .client-item {
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+  .client-item:nth-child(2n) {
+    margin-right: 30px;
   }
   .client-item:nth-child(3n) {
     margin-right: 0;

@@ -179,10 +179,14 @@
                                 <p>Десктопні додатки</p>
                             </div>
                             <picture>
-                                <img srcset="./images/pictures/desktop/superiority-1-min.jpg 370w, 
-                                             ./images/pictures/desktop/superiority-1@2x-min.jpg 740w"
-                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-1-min.jpg"
-                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-1.webp 1x, ./images/pictures/desktop/superiority-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-1-min.jpg 1x, ./images/pictures/desktop/superiority-1@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="section-gallery-img" src="./images/pictures/desktop/superiority-1-min.jpg"
+                                    alt="работа дизайнера за компьютером">
                             </picture>
                         </li>
                         <li class="section-gallery-list-item">
@@ -190,10 +194,14 @@
                                 <p>Мобільні додатки</p>
                             </div>
                             <picture>
-                                <img srcset="./images/pictures/desktop/superiority-2-min.jpg 370w, 
-                                                                         ./images/pictures/desktop/superiority-2@2x-min.jpg 740w"
-                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-2-min.jpg"
-                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-2.webp 1x, ./images/pictures/desktop/superiority-2@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-2-min.jpg 1x, ./images/pictures/desktop/superiority-2@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="section-gallery-img" src="./images/pictures/desktop/superiority-2-min.jpg"
+                                    alt="работа дизайнера за компьютером">
                             </picture>
                         </li>
                         <li class="section-gallery-list-item">
@@ -201,10 +209,14 @@
                                 <p>Дизайнерські рішення</p>
                             </div>
                             <picture>
-                                <img srcset="./images/pictures/desktop/superiority-3-min.jpg 370w, 
-                                                                         ./images/pictures/desktop/superiority-3@2x-min.jpg 740w"
-                                    class="section-gallery-img" src="./images/pictures/desktop/superiority-3-min.jpg"
-                                    alt="работа дизайнера за компьютером" sizes="30vw">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-3.webp 1x, ./images/pictures/desktop/superiority-3@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/superiority-3-min.jpg 1x, ./images/pictures/desktop/superiority-3@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <img class="section-gallery-img" src="./images/pictures/desktop/superiority-3-min.jpg"
+                                    alt="работа дизайнера за компьютером">
                             </picture>
                         </li>
                     </ol>
@@ -218,11 +230,29 @@
                     <ol class="section-team-list list">
                         <li class="section-team-list-item">
                             <picture>
-                                <img class="section-team-img"
-                                    srcset="./images/pictures/mobile/team-1-min.jpg 450w, ./images/pictures/mobile/team-1@2x-min.jpg 900w"
-                                    src="./images/pictures/mobile/team-1-min.jpg"
-                                    alt="Игорь Демьяненко Product Designer"
-                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-1.webp 1x, ./images/pictures/desktop/desktop-team-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-1-min.jpg 1x, ./images/pictures/desktop/desktop-team-1@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-1.webp 1x, ./images/pictures/tablet/tablet-team-1@2x.webp 2x"
+                                    media="(min-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-1-min.jpg 1x, ./images/pictures/tablet/tablet-team-1@2x-min.jpg 2x"
+                                    media="(min-width: 767px)">
+
+                                <source
+                                    srcset="./images/pictures/mobile/team-mobile-1.webp 1x, ./images/pictures/mobile/team-mobile-1@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/mobile/team-1-min.jpg 1x, ./images/pictures/mobile/team-2@2x-min.jpg 2x"
+                                    media="(max-width: 767px)">
+
+                                <img class="section-team-img" src="./images/pictures/mobile/team-1-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer">
                             </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Игорь Демьяненко</h3>
@@ -253,11 +283,29 @@
                         </li>
                         <li class="section-team-list-item">
                             <picture>
-                                <img class="section-team-img"
-                                    srcset="./images/pictures/mobile/team-2-min.jpg 450w, ./images/pictures/mobile/team-2@2x-min.jpg 900w"
-                                    src="./images/pictures/mobile/team-2-min.jpg"
-                                    alt="Игорь Демьяненко Product Designer"
-                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-2.webp 1x, ./images/pictures/desktop/desktop-team-2@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-2-min.jpg 1x, ./images/pictures/desktop/desktop-team-2@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-2.webp 1x, ./images/pictures/tablet/tablet-team-2@2x.webp 2x"
+                                    media="(min-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-2-min.jpg 1x, ./images/pictures/tablet/tablet-team-2@2x-min.jpg 2x"
+                                    media="(min-width: 767px)">
+
+                                <source
+                                    srcset="./images/pictures/mobile/team-mobile-2.webp 1x, ./images/pictures/mobile/team-mobile-2@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/mobile/team-2-min.jpg 1x, ./images/pictures/mobile/team-2@2x-min.jpg 2x"
+                                    media="(max-width: 767px)">
+
+                                <img class="section-team-img" src="./images/pictures/mobile/team-2-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer">
                             </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Ольга Репина</h3>
@@ -288,11 +336,29 @@
                         </li>
                         <li class="section-team-list-item">
                             <picture>
-                                <img class="section-team-img"
-                                    srcset="./images/pictures/mobile/team-3-min.jpg 450w, ./images/pictures/mobile/team-3@2x-min.jpg 900w"
-                                    src="./images/pictures/mobile/team-3-min.jpg"
-                                    alt="Игорь Демьяненко Product Designer"
-                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-3.webp 1x, ./images/pictures/desktop/desktop-team-3@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-3-min.jpg 1x, ./images/pictures/desktop/desktop-team-3@2x-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-3.webp 1x, ./images/pictures/tablet/tablet-team-3@2x.webp 2x"
+                                    media="(min-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-3-min.jpg 1x, ./images/pictures/tablet/tablet-team-3@2x-min.jpg 2x"
+                                    media="(min-width: 767px)">
+
+                                <source
+                                    srcset="./images/pictures/mobile/team-mobile-3.webp 1x, ./images/pictures/mobile/team-mobile-3@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/mobile/team-3-min.jpg 1x, ./images/pictures/mobile/team-3@2x-min.jpg 2x"
+                                    media="(max-width: 767px)">
+
+                                <img class="section-team-img" src="./images/pictures/mobile/team-3-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer">
                             </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Николай Тарасов</h3>
@@ -323,11 +389,29 @@
                         </li>
                         <li class="section-team-list-item">
                             <picture>
-                                <img class="section-team-img"
-                                    srcset="./images/pictures/mobile/team-4-min.jpg 450w, ./images/pictures/mobile/team-4@2x-min.jpg 900w"
-                                    src="./images/pictures/mobile/team-4-min.jpg"
-                                    alt="Игорь Демьяненко Product Designer"
-                                    sizes="(min-width: 1200) 20vw, (min-width:768px) 45vw, 100vw">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-4.webp 1x, ./images/pictures/desktop/desktop-team-4@2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/desktop/desktop-team-4-min.jpg 1x, ./images/pictures/desktop/desktop-team-4@2-min.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-4.webp 1x, ./images/pictures/tablet/tablet-team-4@2x.webp 2x"
+                                    media="(min-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/tablet/tablet-team-4-min.jpg 1x, ./images/pictures/tablet/tablet-team-4@2x-min.jpg 2x"
+                                    media="(min-width: 767px)">
+
+                                <source
+                                    srcset="./images/pictures/mobile/team-mobile-4.webp 1x, ./images/pictures/mobile/team-mobile-4@2x.webp 2x"
+                                    media="(max-width: 767px)" type="image/webp">
+                                <source
+                                    srcset="./images/pictures/mobile/team-4-min.jpg 1x, ./images/pictures/mobile/team-4@2x-min.jpg 2x"
+                                    media="(max-width: 767px)">
+
+                                <img class="section-team-img" src="./images/pictures/mobile/team-4-min.jpg"
+                                    alt="Игорь Демьяненко Product Designer">
                             </picture>
                             <div class="card">
                                 <h3 class="team-subtitle header">Михаил Ермаков</h3>
