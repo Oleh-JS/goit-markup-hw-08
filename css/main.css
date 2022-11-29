@@ -625,7 +625,6 @@ form .button {
     width: 100vw;
     height: 100vh;
     z-index: 900;
-    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1019,7 +1018,7 @@ form .button {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .section-gallery {
     display: none;
   }
