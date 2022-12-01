@@ -339,6 +339,7 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+    max-height: 581px;
   }
 }
 .btn {
@@ -656,7 +657,7 @@ form .button {
     width: 100%;
     height: 100vh;
     z-index: 900;
-    overflow: hidden;
+    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -665,6 +666,8 @@ form .button {
     background-color: #ffffff;
   }
   .mobile-menu.is-open {
+    position: fixed;
+    overflow-y: scroll;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -686,9 +689,6 @@ form .button {
     fill: var(--color-accent);
   }
   .mobile-menu__nav-item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 40px;
@@ -708,6 +708,11 @@ form .button {
   .mobile-menu__container {
     padding-left: 40px;
   }
+  .mobile-menu__container-nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
   .mobile-menu__wrapper-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -716,11 +721,8 @@ form .button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding: 48px 0;
-    height: 100vh;
+    height: 85vh;
   }
   .mobile-menu__contact-link-tel {
     display: inline-block;

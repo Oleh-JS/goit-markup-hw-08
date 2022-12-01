@@ -26,7 +26,7 @@
     height: 100vh;
 
     z-index: 900;
-    overflow: hidden;
+    overflow: auto;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -37,6 +37,8 @@
   }
 
   .mobile-menu.is-open {
+    position: fixed;
+    overflow-y: scroll;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -62,7 +64,6 @@
   }
 
   .mobile-menu__nav-item {
-    flex: 1 1 auto;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 40px;
@@ -88,12 +89,17 @@
     padding-left: 40px;
   }
 
+  .mobile-menu__container-nav {
+    flex: 1 1 auto;
+  }
+
   .mobile-menu__wrapper-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // flex: 1 1 auto;
+    // justify-content: space-between;
     padding: 48px 0;
-    height: 100vh;
+    height: calc(100vh - 15vh);
   }
 
   .mobile-menu__contact-link-tel {
