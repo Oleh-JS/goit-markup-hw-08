@@ -140,6 +140,11 @@ footer .button > svg {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer > .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .footer-wrapper {
     display: flex;
     justify-content: space-between;

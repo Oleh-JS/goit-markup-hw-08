@@ -313,8 +313,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: calc(100% - 60px);
-  width: calc(100% - 30px);
+  width: calc(100vw - 30px);
+  height: 72vh;
   padding: 40px;
   overflow: auto;
   background-color: var(--second-header-color-text);
@@ -334,12 +334,14 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;
+    max-height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    max-height: 581px;
+    height: 581px;
+    overflow: visible;
   }
 }
 .btn {
@@ -463,6 +465,9 @@ body {
   margin-bottom: 10px;
   color: var(--color-text);
 }
+.form-feedback label:last-child {
+  margin-bottom: 0;
+}
 
 .form-feedback input {
   position: relative;
@@ -560,18 +565,26 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .wrapper-checkbox label {
-  display: inline-block;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
-  margin-bottom: 30px;
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
 
 .wrapper-checkbox > input + label svg {
+  margin-right: 8px;
+  min-width: 14px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -749,12 +762,6 @@ form .button {
         flex-wrap: wrap;
   }
   .mobile-menu__social-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     color: var(--color-accent);
     font-weight: 500;
     font-size: 18px;
@@ -774,6 +781,22 @@ form .button {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+@media screen and (max-width: 479, 98px) {
+  .mobile-menu__nav-item {
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+  .mobile-menu__contact-link-tel {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .mobile-menu__contact-list {
+    margin-bottom: 26px;
+  }
+  .mobile-menu__social-item {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -1016,6 +1039,7 @@ form .button {
 .card-advantage__subtitle {
   margin-bottom: 10px;
   line-height: 1.17;
+  text-transform: uppercase;
 }
 
 .section-info__item:not(:last-child) {
@@ -1529,6 +1553,10 @@ footer .button > svg {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer > .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .footer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

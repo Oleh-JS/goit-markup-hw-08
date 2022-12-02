@@ -25,10 +25,8 @@
   top: 50%;
   left: 50%;
 
-  // width: calc(100vw - 10vw);
-  // height: calc(100vh - 10vh);
-  height: calc(100% - 60px);
-  width: calc(100% - 30px);
+  width: calc(100vw - 30px);
+  height: calc(100vh - 28vh);
   padding: 40px;
 
   overflow: auto;
@@ -44,12 +42,14 @@
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;
+    max-height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    max-height: 581px;
+    height: 581px;
+    overflow: visible;
   }
 }
